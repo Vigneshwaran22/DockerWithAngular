@@ -6,9 +6,10 @@ pipeline {
     stage("build") {
       steps {
         echo 'coming from the github'
-        script {
-          sh 'docker build -t myng:latest .'
-        }
+        sh 'node --version'
+        // script {
+        //   sh 'docker build -t myng:latest .'
+        // }
       }
     }
   }
