@@ -7,9 +7,7 @@ pipeline {
       steps {
         echo 'coming from the github'
         script {
-            sh """
-              docker build -t myng:latest .
-            """
+          docker.build "myng:latest"    
         }
       }
     }
